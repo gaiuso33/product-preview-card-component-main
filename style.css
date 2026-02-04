@@ -1,0 +1,63 @@
+body{
+    display: flex;  
+    justify-content: center;
+    align-items: center;    
+}
+
+#container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* This is how your website looks on mobile by default */
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* This changes the layout for screens wider than 48em */
+@media (min-width: 48em) {
+  #container {
+    flex-direction: row;
+    max-width: 1440px
+  }
+}
+.text{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+#price{
+    font-family: "Fraunces", serif;
+    font-size: 32px;
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    margin: 0;
+}
+@font-face {
+font-family: "Montserrat";
+src: url('fonts\Montserrat\Montserrat-VariableFont_wght.ttf') format("truetype");
+font-weight: 400;
+font-style: normal;
+}
+
+@font-face {
+font-family: "Montserrat";
+src: url('fonts\Montserrat\Montserrat-VariableFont_wght.ttf') format("truetype");
+font-weight: 700;
+font-style: normal;
+}
+
+@font-face {
+font-family: "Fraunces";
+src: url('fonts\Fraunces\Fraunces-VariableFont_wght.ttf') format("truetype");
+font-weight: 700;
+font-style: normal;
+}
